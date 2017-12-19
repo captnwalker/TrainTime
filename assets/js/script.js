@@ -1,4 +1,5 @@
-  // Initialize Firebase
+$(document).ready(function(){
+ // Initialize Firebase
   var config = {
     apiKey: "AIzaSyB-yelf2rmsbf6YICYZBNEO1bntvA5WjS4",
     authDomain: "traintime-eb285.firebaseapp.com",
@@ -9,3 +10,5 @@
   };
   firebase.initializeApp(config);
 
+  //Variable/s
+  var database = firebase.database();

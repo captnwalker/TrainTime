@@ -5,11 +5,11 @@
 Description of project here
 
 ### Link to Live Site
-[GifTastic Live Site](https://captnwalker.github.io/GifTastic/ "GifTastic")
+[TrainTime Live Site](https://captnwalker.github.io/TrainTime/ "TrainTime")
 
 ### Screenshot of this Project
 
-![GifTastic](https://raw.github.com/captnwalker/GifTastic/master/screenshot/GifTastic-sm.png "Engaging, Cartoon-themed Giphy API Search Page")
+![TrainTime](https://raw.github.com/captnwalker/TrainTime/master/screenshot/TrainTime.png "TrainTime")
 
 ### Technologies Utilized
 
@@ -17,6 +17,7 @@ Description of project here
 * Moment.js
 * jQuery
 * JavaScript
+* Bootstrap
 * CSS
 * HTML5
 
@@ -29,4 +30,4 @@ Description of project here
 
 * Steve Walker
 
-![Maxtocat](https://octodex.github.com/images/maxtocat.gif)
+![Saint Nictocat](https://octodex.github.com/images/saint_nictocat.jpg)
