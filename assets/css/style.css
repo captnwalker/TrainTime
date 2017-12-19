@@ -29,11 +29,14 @@ body {
     margin-bottom: 5px;          
 }
 
-
 .sidebar {
     color: #ffffff;
     background: rgba(251, 192, 54, 0.5);
     border: 1px solid rgb(255, 238, 1);  
+}
+
+h1 {
+    
 }
 
 h2 {
