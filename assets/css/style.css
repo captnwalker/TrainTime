@@ -11,8 +11,7 @@ body {
     color: #ffffff;
     text-shadow: 3px 3px 5px #000000;  
     border: 1px solid rgb(255, 238, 1);
-    margin-top: 25px;
-    
+    margin-top: 25px;    
 }
 
 .panel {
@@ -27,8 +26,7 @@ body {
     /* background: rgb(105, 105, 105); */
     background: rgba(70, 180, 243, 0.5); 
     border: .5px solid rgb(255, 238, 1); 
-    margin-bottom: 5px;   
-       
+    margin-bottom: 5px;          
 }
 
 
@@ -36,8 +34,7 @@ body {
     color: #ffffff;
     background: rgba(251, 192, 54, 0.5);
     border: 1px solid rgb(255, 238, 1);  
-    }
-
+}
 
 h2 {
     font-size: 1.5em;
@@ -57,9 +54,6 @@ label {
     background-color: none;
 /* style="background-color: none !important; " */
 }
-
-
-
 
 /* Media Screen */
 

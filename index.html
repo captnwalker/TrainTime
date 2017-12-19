@@ -103,28 +103,33 @@
         <div class="panel panel-primary">
           <div class="panel-heading">Add a New Train</div>
           <div class="panel-body">
+            <!-- Form -->
             <form role="form" class='form-horizontal'>
+
               <div class="form-group">
-                <label for="name">Train Name (Alias)</label>
-                <input type="text" class="form-control" id="nameInput" placeholder="Enter Train Alias">
+                <label for="train">Train Name (Alias)</label>
+                <input type="text" class="form-control" id="enterTrain" placeholder="Train Alias">
               </div>
+
               <div class="form-group">
                 <label for="dest">Destination </label>
-                <input type="text" class="form-control" id="destInput" placeholder="Bugtussle, Kentucky">
+                <input type="text" class="form-control" id="enterDest" placeholder="Bugtussle, Kentucky">
               </div>
+
               <div class="form-group">
                 <label class="nextTrain" for="nextTrain">First Train Time</label>
-                <label class="milTime">&nbsp;(HH:mm | Military)</label>
-                <input type="" class="form-control" id="timeInput" placeholder="24:00">
+                <label class="armyTime">&nbsp;(HH:mm | Military)</label>
+                <input type="" class="form-control" id="enterTime" placeholder="24:00">
               </div>
+
               <div class="form-group">
-                <label for="minsAway">Frequency - (mins) </label>
-                <input type="text" class="form-control" id="freqInput" placeholder="30">
+                <label for="minutesAway">Frequency - (mins) </label>
+                <input type="text" class="form-control" id="enterFrequency" placeholder="30">
               </div>
 
               <button type="submit" class="btn btn-default" id="submit">Add Train</button>
 
-              <button type="submit" class="btn btn-default" id="removeTain">Remove Train</button>
+              <button type="submit" class="btn btn-default" id="remove">Remove Train</button>
               <hr>
               <!-- Audio controls - Remove X for deploy -->
               <audio controls aXutoplay="autoplay" style="width:230px" loop="true">
