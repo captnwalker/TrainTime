@@ -1,7 +1,75 @@
 body {
    font-family: 'Raleway', sans-serif;
-   background: url(../img/tunnel.jpg
+   color: #ffffff;
+   /* background: url(../img/tunnel.jpg); */
+}
+
+.jumbotron {
+    width: 100%;
+    /* background: rgb(120, 120, 120); */
+    background: rgba(251, 192, 54, 0.5);    
+    color: #ffffff;
+    text-shadow: 3px 3px 5px #000000;  
+    border: 1px solid rgb(255, 238, 1);
+    /* top:15px; */
+    margin-top: 10px;
+}
+
+.panel {
+    background: rgba(251, 192, 54, 0.5);  
+    text-shadow: 1.7px 1.7px 3px #000000;
+    border: .5px solid rgb(255, 238, 1); 
+}
+
+.panel-primary >.panel-heading {
+    color: #ffffff;
+    font-size: 20px;    
+    /* background: rgb(105, 105, 105); */
+    background: rgba(70, 180, 243, 0.5); 
+    border: .5px solid rgb(255, 238, 1);  
+    
+}
 
 
-   );
+.sidebar {
+    color: #ffffff;
+    background: rgba(251, 192, 54, 0.5);
+    border: 1px solid rgb(255, 238, 1);  
+    }
+
+
+h2 {
+    font-size: 1.5em;
+}
+
+#slideshow {
+    z-index: -5;
+    width: 100%;
+}
+
+
+
+
+/* Media Screen */
+
+@media screen and (max-width:980px) {  
+}
+
+@media screen and (max-width:768px) {
+}
+
+@media screen and (max-width:640px) {
+}
+
+@media (max-width: 640px) {
+    #masthead {
+      position: static;
+    }
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+    float: none;
+    max-width: 100%;
+    }
 }

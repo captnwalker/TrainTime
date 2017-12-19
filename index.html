@@ -8,10 +8,6 @@
 
   <title>Train Time</title>
 
-  <!-- Links to Stylesheets -->
-  <!-- <link rel="stylesheet" type="text/css" href="assets/css/reset.css"> -->
-  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-
   <!-- Latest compiled and minified CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
     crossorigin="anonymous">
@@ -35,20 +31,71 @@
 
   <!-- Link to FontAwesome -->
 
+  <!-- Link to Moment.js CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.20.0/moment.js"></script>
+
+  <!-- Links to Stylesheets -->
+  <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
 </head>
 
 <body>
-  <div class="container">
-    <div class="jumbotron text-center" style="background-color: none; color: none">
-<h1>Arrivals</h1>
-<hr>
-<h3>The Current time is: </h3>
-      <div class="row">
-        <div class="col-sm-8"></div>
 
-        <div class="col-sm-3"></div>
+  <div id="slideshow">
+    <img src="assets/img/tunnel.jpg" class="bgM" />
+    <img src="assets/img/subway.jpg" class="bgM" />
+    <img src="assets/img/urban_sm.jpg" class="bgM" />
+    <img src="assets/img/penn_red.jpg" class="bgM" />
+    <!-- <img src="assets/img/tunnel.jpg" class="bgM"/>
+        <img src="assets/img/tunnel.jpg" class="bgM"/>
+        <img src="assets/img/tunnel.jpg" class="bgM"/> -->
+  </div>
+  <div class="container">
+    <!-- Transparent Jumbotron w/CSS -->
+
+    <div class="jumbotron text-center">
+
+
+      <h1>Arrivals</h1>
+      <hr>
+      <!-- Display local time -->
+      <h2>Local Time:
+        <span id="currentTime"></span>
+      </h2>
+    </div>
+    <!-- End Jumbotron | begin 2 columns -->
+
+    <div class="row">
+      <!-- Timetable -->
+      <div class="col-sm-9">
+        <!-- Panel-Primary needed to get white text in Bootstrap -->
+          <div class="panel panel-primary">
+              <div class="panel-heading">Panel heading without title</div>
+              <div class="panel-body">
+                Panel content
+              </div>
+            </div>
+          
+
+      </div>
+
+
+      <!-- Sidebar -->
+      <div class="col-sm-3">
+        <!-- Panel-Primary needed to get white text in Bootstrap -->
+          <div class="panel panel-primary">
+              <div class="panel-heading">Panel Heading</div>
+              <div class="panel-body">
+                Panel content
+              </div>
+            </div>
+
+        
+
       </div>
     </div>
+
   </div>
 
 
@@ -56,11 +103,23 @@
 
 
 
-  <!-- JAVASCRIPT - This must be last item in <body>. -->
-  <!-- ========================================= -->
+  <!-- JAVASCRIPT - This must be last item in <body> -->
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
   <script type="text/javascript" src="assets/js/script.js"></script>
+  <script type="text/javascript" src="assets/js/bg.js"></script>
+  <script>
+    $(document).ready(function () {
+      $('#slideshow').cycle({
+        fx: 'fade',
+        pager: '#smallnav',
+        pause: 1,
+        // CHANGE TO 5000 FOR DEPLOY
+        speed: 5000000,
+        timeout: 3500
+      });
+    });
+  </script>
 
 </body>
 
