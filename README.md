@@ -24,10 +24,15 @@ Description of project here
 ### Pseudo Code
 
 1. Create db in FireBase
+
 2. Link to db
+
+3.
 
 ### Author
 
 * Steve Walker
+
+* Background Rotator Script: CREDIT: [jQuery Cycle Lite Plugin](http://malsup.com/jquery/cycle/lite/)
 
 ![Saint Nictocat](https://octodex.github.com/images/saint_nictocat.jpg)

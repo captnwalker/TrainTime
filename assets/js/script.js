@@ -15,7 +15,7 @@ $(document).ready(function () {
 
     var freq = parseInt(freq);
 
-    //Current time
+    //Current time | writes to Jumbotron
     var currentTime = moment();
     console.log("Local Time: " + moment().format('HH:mm'));
 
