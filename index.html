@@ -47,13 +47,13 @@
     <img src="assets/img/subway.jpg" class="bgM" />
     <img src="assets/img/urban_sm.jpg" class="bgM" />
     <img src="assets/img/penn_red.jpg" class="bgM" />
-    <!-- <img src="assets/img/tunnel.jpg" class="bgM"/>
-        <img src="assets/img/tunnel.jpg" class="bgM"/>
-        <img src="assets/img/tunnel.jpg" class="bgM"/> -->
+    <img src="assets/img/tunnel2.jpg" class="bgM" />
+    <img src="assets/img/orsay.jpg" class="bgM" />
+    <img src="assets/img/Train_wreck_Orsay_1895.jpg" class="bgM" />
   </div>
+
   <div class="container">
     <!-- Transparent Jumbotron w/CSS -->
-
     <div class="jumbotron text-center">
 
 
@@ -70,44 +70,89 @@
       <!-- Timetable -->
       <div class="col-sm-9">
         <!-- Panel-Primary needed to get white text in Bootstrap -->
-          <div class="panel panel-primary">
-              <div class="panel-heading">Panel heading without title</div>
-              <div class="panel-body">
-                Panel content
-              </div>
+        <div class="panel panel-primary">
+          <div class="panel-heading">All Trains | Scheduled Arrivals</div>
+          <div class="panel-body">
+            <div class="panel-body">
+              <table class="table table-hover table-responsive" id="timeTable">
+                <thead>
+                  <tr>
+                    <th>Train</th>
+                    <th>Destination</th>
+                    <th>Frequency (min)</th>
+                    <th>Next Arrival</th>
+                    <th>Arrives In (min)</th>
+                  </tr>
+                </thead>
+                <!-- Input data will be written here -->
+                <tbody id="trainTable">
+                  <tr></tr>
+                </tbody>
+              </table>
             </div>
-          
-
+            <!-- Closes panel-body <div> -->
+          </div>
+          <!-- Closes panel panel-primary <div> -->
+        </div>
+        <!-- Closes Col-sm-9 <div> -->
       </div>
-
 
       <!-- Sidebar -->
       <div class="col-sm-3">
         <!-- Panel-Primary needed to get white text in Bootstrap -->
-          <div class="panel panel-primary">
-              <div class="panel-heading">Panel Heading</div>
-              <div class="panel-body">
-                Panel content
+        <div class="panel panel-primary">
+          <div class="panel-heading">Add a New Train</div>
+          <div class="panel-body">
+            <form role="form" class='form-horizontal'>
+              <div class="form-group">
+                <label for="name">Train Name (Alias)</label>
+                <input type="text" class="form-control" id="nameInput" placeholder="Enter Train Alias">
               </div>
-            </div>
+              <div class="form-group">
+                <label for="dest">Destination </label>
+                <input type="text" class="form-control" id="destInput" placeholder="Bugtussle, Kentucky">
+              </div>
+              <div class="form-group">
+                <label class="nextTrain" for="nextTrain">First Train Time</label>
+                <label class="milTime">&nbsp;(HH:mm | Military)</label>
+                <input type="" class="form-control" id="timeInput" placeholder="24:00">
+              </div>
+              <div class="form-group">
+                <label for="minsAway">Frequency - (mins) </label>
+                <input type="text" class="form-control" id="freqInput" placeholder="30">
+              </div>
 
-        
+              <button type="submit" class="btn btn-default" id="submit">Add Train</button>
 
+              <button type="submit" class="btn btn-default" id="removeTain">Remove Train</button>
+              <hr>
+              <!-- Audio controls - Remove X for deploy -->
+              <audio controls aXutoplay="autoplay" style="width:230px" loop="true">
+                <source src="assets\snd\crossing.mp3" type="audio/mpeg"> Your browser does not support the audio element.
+              </audio>
+            </form>
+
+
+            <!-- Closes panel-body <div> -->
+          </div>
+          <!-- Closes panel panel-primary <div> -->
+        </div>
+        <!-- Closes Col-sm-3 <div> -->
       </div>
+      <!-- Closes Sidebar <div> -->
     </div>
-
+    <!-- Closes Row <div> -->
   </div>
-
-
-
-
-
+  <!-- Closes Container <div> -->
 
   <!-- JAVASCRIPT - This must be last item in <body> -->
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
   <script type="text/javascript" src="assets/js/script.js"></script>
   <script type="text/javascript" src="assets/js/bg.js"></script>
+
+  <!-- Triggers backgound image rotator inconjunction with bg.js -->
+  <!-- Credit for this script is noted in bg.js -->
   <script>
     $(document).ready(function () {
       $('#slideshow').cycle({
@@ -115,7 +160,7 @@
         pager: '#smallnav',
         pause: 1,
         // CHANGE TO 5000 FOR DEPLOY
-        speed: 5000000,
+        speed: 55555500,
         timeout: 3500
       });
     });
