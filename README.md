@@ -33,6 +33,6 @@ Description of project here
 
 * Steve Walker
 
-* Background Rotator Script: CREDIT: [jQuery Cycle Lite Plugin](http://malsup.com/jquery/cycle/lite/)
+* CREDIT: Background Rotator Script:[jQuery Cycle Lite Plugin](http://malsup.com/jquery/cycle/lite/)
 
 ![Saint Nictocat](https://octodex.github.com/images/saint_nictocat.jpg)
