@@ -56,8 +56,22 @@ $(document).ready(function () {
         console.log("Next Train: " + firstTrain);
         console.log("Frequency: " + frequency);
 
-
-        //Parse frequency "string" into an integer | Obtain current time & log
+        //Parse the frequency "string" into an integer | Obtain current time & log
         var frequency = parseInt(frequency);
         var currentTime = moment();
         console.log("Current Time: " + moment().format('HH:mm'));
+
+        //Converting time of new train (firstTrain) and retrieving current time and converting it to miltary format (HH:mm) and logging the results
+        var dateConvert = moment(childSnapshot.val().firstTrain, 'HH:mm').subtract(1, 'years');
+        console.log("Date converted: " + dateConvert);
+        var trainTime = moment(dateConvert).format('HH:mm');
+        console.log("Train Time : " + trainTime);
+
+        //Calculating difference between the two times
+        var timeConvert = moment(trainTime, 'HH:mm').subtract(1, 'years');
+        var timeDiff = moment().diff(moment(timeConvert), 'minutes');
+        console.log("Difference in Times: " + timeDiff);
+
+   
+
+});
