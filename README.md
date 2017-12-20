@@ -10,7 +10,7 @@ An immersive train scheduling app built with Firebase, jQuery and Bootstrap that
 
 ### Screenshot of this Project
 
-![TrainTime](https://raw.github.com/captnwalker/TrainTime/master/screenshot/TrainTime.png "TrainTime")
+![TrainTime](https://raw.github.com/captnwalker/TrainTime/master/screenshot/TrainTime.gif "TrainTime")
 
 ### Technologies Utilized
 
@@ -26,6 +26,6 @@ An immersive train scheduling app built with Firebase, jQuery and Bootstrap that
 
 * Steve Walker
 
-* CREDIT: Background Rotator Script:[jQuery Cycle Lite Plugin](http://malsup.com/jquery/cycle/lite/)
+* CREDIT: Background Rotator Script: [jQuery Cycle Lite Plugin](http://malsup.com/jquery/cycle/lite/)
 
 ![Saint Nictocat](https://octodex.github.com/images/saint_nictocat.jpg)
