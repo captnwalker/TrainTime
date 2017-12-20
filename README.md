@@ -10,7 +10,7 @@ An immersive train scheduling app built with Firebase, jQuery and Bootstrap that
 
 ### Screenshot of this Project
 
-![TrainTime](https://raw.github.com/captnwalker/TrainTime/master/screenshot/TrainTime.gif "TrainTime")
+![TrainTime](https://raw.github.com/captnwalker/TrainTime/master/screenshot/TrainTime.jpg "TrainTime")
 
 ### Technologies Utilized
 
