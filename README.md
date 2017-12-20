@@ -2,9 +2,10 @@
 
 ## Train Scheduler built with Firebase
 
-Description of project here
+An immersive train scheduling app built with Firebase, jQuery and Bootstrap that features a gossamer-like interface, engaging rotating background images and real locamotive sound effects. Enjoy the ride.
 
 ### Link to Live Site
+
 [TrainTime Live Site](https://captnwalker.github.io/TrainTime/ "TrainTime")
 
 ### Screenshot of this Project
@@ -20,14 +21,6 @@ Description of project here
 * Bootstrap
 * CSS
 * HTML5
-
-### Pseudo Code
-
-1. Create db in FireBase
-
-2. Link to db
-
-3.
 
 ### Author
 

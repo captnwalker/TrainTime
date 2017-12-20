@@ -72,6 +72,29 @@ $(document).ready(function () {
         var timeDiff = moment().diff(moment(timeConvert), 'minutes');
         console.log("Difference in Times: " + timeDiff);
 
-   
+        //Using Modulus % to calculate the remainder
+        var timeRemain = timeDiff % frequency;
+        console.log("First Train arrives: " + timeRemain);
 
+        //Frequency minus timeRemain (modulus) yeilds minutes until arrival
+        var minutesAway = frequency - timeRemain;
+        console.log("Minutes until next Train: " + minutesAway);
+
+        //Adding minutes away to the current time to project the trains arrival time and console logs the result in military format
+        var firstTrain = moment().add(minutesAway, 'minutes');
+        console.log("Arrival time: " + moment(firstTrain).format('HH:mm'));
+
+        //Appending new dataset to the HTML table
+        $('#currentTime').text(currentTime);
+        $('#trainTable').append(
+            "<tr><td id='trainDisplay'>" + childSnapshot.val().train +
+            "</td><td id='destDisplay'>" + childSnapshot.val().dest +
+            "</td><td id='frequencyDisplay'>" + childSnapshot.val().frequency +
+            "</td><td id='nextDisplay'>" + moment(firstTrain).format("HH:mm") +
+            "</td><td id='awayDisplay'>" + minutesAway + ' minutes until arrival' + "</td></tr>");
+    },
+
+        function (errorObject) {
+            console.log("Read failed: " + errorObject.code)
+        });
 });
