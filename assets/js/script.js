@@ -1,6 +1,7 @@
+
 $(document).ready(function () {
 
-    // Config & Initialize `traintime` Firebase
+    //Set Variable & Initialize `traintime` Firebase
     var config = {
         apiKey: "AIzaSyB-yelf2rmsbf6YICYZBNEO1bntvA5WjS4",
         authDomain: "traintime-eb285.firebaseapp.com",
@@ -14,27 +15,23 @@ $(document).ready(function () {
     //Variables
     var database = firebase.database();
 
-
-    //Current Time
+    //Pulls current time from Moment.js
     var currentTime = moment();
-    console.log("Local time: " + moment().format("HH:mm"));
+    console.log("Local time: " + moment().format('HH:mm'));
 
     //Writes Current Time to Jumbotron
-    $("#currentTime").text(currentTime);
+    $('#currentTime').text(currentTime);
 
     //Button click capture
     $("#submit").on("click", function () {
 
         //Assign values to the Id"s in the HTML
-        var train = $("#enterTrain").val().trim();
-        var dest = $("#enterDest").val().trim();
-        var firstTrain = $("#enterTime").val().trim();
-        var frequency = $("#enterFrequency").val().trim();
+        var train = $('#enterTrain').val().trim();
+        var dest = $('#enterDest').val().trim();
+        var firstTrain = $('#enterTime').val().trim();
+        var frequency = $('#enterFrequency').val().trim();
 
-        //Parse frequency "string" into an integer
-        var frequency = parseInt(frequency);
-
-        //Push new train data to Firebase
+        // Push new train data to Firebase
         database.ref().push({
 
             train: train,
@@ -44,3 +41,23 @@ $(document).ready(function () {
             timeAdded: firebase.database.ServerValue.TIMESTAMP
         });
     });
+
+    //On click (new train/child added) take a snapshot
+    database.ref().on("child_added", function (childSnapshot) {
+
+        var train = childSnapshot.val().train;
+        var dest = childSnapshot.val().dest;
+        var firstTrain = childSnapshot.val().firstTrain;
+        var frequency = childSnapshot.val().frequency;
+
+        // Log the snapshot values
+        console.log("Train: " + train);
+        console.log("Destination: " + dest);
+        console.log("Next Train: " + firstTrain);
+        console.log("Frequency: " + frequency);
+
+
+        //Parse frequency "string" into an integer | Obtain current time & log
+        var frequency = parseInt(frequency);
+        var currentTime = moment();
+        console.log("Current Time: " + moment().format('HH:mm'));
