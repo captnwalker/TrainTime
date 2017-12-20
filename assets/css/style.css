@@ -16,7 +16,7 @@ body {
 .panel {
     background: rgba(251, 192, 54, 0.5);  
     text-shadow: 1.7px 1.7px 3px #000000;
-    border: .5px solid rgb(255, 238, 1); 
+    border: 1px solid rgb(255, 238, 1); 
 }
 
 .panel-primary >.panel-heading {

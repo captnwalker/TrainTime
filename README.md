@@ -2,7 +2,7 @@
 
 ## Train Scheduler built with Firebase
 
-An immersive train scheduling app built with Firebase, jQuery and Bootstrap that features a gossamer-like responsive interface, engaging rotating background images and real locamotive sound effects. Enjoy the ride.
+An immersive train scheduling app built with Firebase, jQuery and Bootstrap that features a gossamer-like responsive interface, engaging rotating background images and real locomotive sound effects. Enjoy the ride.
 
 ### Link to Live Site
 
@@ -19,6 +19,7 @@ An immersive train scheduling app built with Firebase, jQuery and Bootstrap that
 * jQuery
 * JavaScript
 * Bootstrap
+* Google Fonts
 * CSS
 * HTML5
 
