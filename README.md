@@ -20,7 +20,7 @@ An immersive train scheduling app built with Firebase, jQuery and Bootstrap that
 * JavaScript
 * Bootstrap
 * Google Fonts
-* CSS
+* CSS3
 * HTML5
 
 ### Author

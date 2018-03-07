@@ -5,12 +5,12 @@ body {
 }
 
 .jumbotron {
-    width: 100%;   
-    background: rgba(251, 192, 54, 0.5);    
+    width: 100%;
+    background: rgba(251, 192, 54, 0.5);
     color: #ffffff;
     text-shadow: 3px 3px 5px #000000;  
     border: 1px solid rgb(255, 238, 1);
-    margin-top: 20px;    
+    margin-top: 20px;
 }
 
 .panel {
