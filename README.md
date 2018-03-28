@@ -2,7 +2,11 @@
 
 ## Train Scheduler built with Firebase
 
-An immersive train scheduling app built with Firebase, jQuery and Bootstrap that features a gossamer-like responsive interface, engaging rotating background images and real locomotive sound effects. Enjoy the ride.
+An immersive train scheduling app built with Firebase non-Sql database, jQuery and Bootstrap that features a gossamer-like responsive interface, engaging rotating background images and real locomotive sound effects. Enjoy the ride.
+
+### How to Use
+
+    >Enter a new Train name & destination. Add the time that your first train will arrive and how often (the trains frequency of arrival) in minutes. The scheduler uses moment.js to calculate how long until, and at what time the next train will arrive based on the current time (moment.js), the original departure time and frequecy entered.
 
 ### Link to Live Site
 
@@ -14,7 +18,7 @@ An immersive train scheduling app built with Firebase, jQuery and Bootstrap that
 
 ### Technologies Utilized
 
-* Firebase
+* Firebase non-Sql Database
 * Moment.js
 * jQuery
 * JavaScript
@@ -25,8 +29,10 @@ An immersive train scheduling app built with Firebase, jQuery and Bootstrap that
 
 ### Author
 
-* Steve Walker
+- **Steve Walker**  | [LinkedIn](https://www.linkedin.com/in/stevelwalker/)
 
-* CREDIT: Background Rotator Script: [jQuery Cycle Lite Plugin](http://malsup.com/jquery/cycle/lite/)
+- License MIT - *December 2017*
 
-![Saint Nictocat](https://octodex.github.com/images/saint_nictocat.jpg)
+#### CREDITS
+
+- Background Rotator Script: [jQuery Cycle Lite Plugin](http://malsup.com/jquery/cycle/lite/)
